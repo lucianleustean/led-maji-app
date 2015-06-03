@@ -1,2 +1,6 @@
 en:
-  hello: 'Welcome to your Maji app!'
+  home:
+    connect: 'Connect to a BLE device'
+
+  ble_connect:
+    title: 'BLE devices'

@@ -1,0 +1,6 @@
+.header
+  %a{href:'#/', class:'btn left', 'data-rel': 'back'}
+  = @t('ble_connect.title')
+
+.body
+  %p Yo man!!

@@ -3,3 +3,4 @@
 .body
   %ul.listview
     %li
+      %a{href: '#/bleConnect', 'data-transition': 'slide'}= @t('home.connect')

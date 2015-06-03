@@ -6,12 +6,16 @@ HomeApp.startWithParent = false
 
 class HomeApp.Router extends Marionette.AppRouter
   appRoutes:
-    ''       : 'home'
+    ''           : 'home'
+    'bleConnect' : 'bleConnect'
 
 API =
   home: ->
     IndexPage = require('./views/index_page')
     app.mainRegion.show new IndexPage()
+  bleConnect: ->
+    ConnectPage = require('../ble_connect/views/index_page')
+    app.mainRegion.show new ConnectPage()
 
 HomeApp.addInitializer ->
   new HomeApp.Router
