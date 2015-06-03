@@ -1,0 +1,5 @@
+{
+  "environment": "production",
+  "defaultLocale": "en-US",
+  "bugsnagApiKey" : "<your bugsnag API key here>"
+}
