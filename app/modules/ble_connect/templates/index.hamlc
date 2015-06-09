@@ -3,4 +3,7 @@
   = @t('ble_connect.title')
 
 .body
-  %p Yo man!!
+  #connected
+    %ul.list
+
+  #available
