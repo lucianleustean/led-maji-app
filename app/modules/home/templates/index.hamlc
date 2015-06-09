@@ -8,3 +8,7 @@
   .content
     %header
       %p.instructions= @t('home.instruction')
+
+    %button#red=   @t('red')
+    %button#blue=  @t('blue')
+    %button#green= @t('green')

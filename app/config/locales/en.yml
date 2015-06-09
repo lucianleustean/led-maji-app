@@ -1,4 +1,8 @@
 en:
+  red: Red
+  blue: Blue
+  green: Green
+
   home:
     connect: 'Connect to a BLE device'
     instruction: |
