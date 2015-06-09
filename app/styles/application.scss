@@ -125,3 +125,63 @@ a, a:active, a:hover, a:visited {
     }
   }
 }
+
+.list {
+  list-style-type: none;
+  margin: -15px;
+  padding: 0;
+
+  li {
+    border-bottom: 1px solid $gray;
+    padding: 15px;
+    position: relative;
+
+    strong {
+      color: $dark-blue;
+    }
+
+    &:nth-child(2n) {
+      background-color: $light-gray;
+    }
+
+    &.connected {
+      @include icon(check, after);
+
+      background-color: $light-green;
+
+      // scss-lint:disable NestingDepth
+      &:after {
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        margin-top: -10px;
+        color: $dark-green;
+      }
+    }
+  }
+}
+
+#red {
+  background-color: $red;
+}
+
+#blue {
+  background-color: $blue;
+}
+
+#green {
+  background-color: $green;
+}
+
+.content {
+  button {
+    border: 0;
+    color: $white;
+    display: block;
+    height: 70px;
+    margin: 40px auto;
+    text-align: center;
+    width: 70%;
+  }
+}
