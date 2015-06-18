@@ -1,6 +1,8 @@
 en:
   home:
     connect: 'Connect to a BLE device'
+    instruction: |
+      Press a button to interact with the BLE device
 
   ble_connect:
     title: 'BLE devices'
