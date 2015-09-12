@@ -1,3 +1,16 @@
+/*
+ * Created by Lucian Leustean, http://lucianleustean.com/
+ * Control Arduino 3 LEDs using Mobile app via Bluetooth LE
+ * 2015
+ */
+
+// Avoid removing the BLE sensor everytime
+#define BT_RX_PIN 2
+#define BT_TX_PIN 3
+
+#include <SoftwareSerial.h>
+SoftwareSerial BTSerial(BT_RX_PIN, BT_TX_PIN);
+
 // Assign pin number for LED
 int redPin = 13;
 int greenPin = 12;
@@ -8,6 +21,7 @@ String readString;
 void setup() {
   // initialize serial communication
   Serial.begin(9600);
+  BTSerial.begin(9600);
 
   // initialize the LED pins;
   for (int thisPin = 11; thisPin < 14; thisPin++) {
@@ -16,9 +30,9 @@ void setup() {
 }
 
 void loop() {
-  while (Serial.available() > 0) {
+  while (BTSerial.available() > 0) {
     delay(3);
-    char c = Serial.read();
+    char c = BTSerial.read();
     readString += String(c);
   }
 
