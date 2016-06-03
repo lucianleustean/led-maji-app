@@ -13,6 +13,7 @@ app = new Maji.Application
 
 app.addInitializer ->
   require('./modules/home/home_app').start()
+  require('./modules/ble_connect/ble_connect_app').start()
 
 app.on 'initialize:after', (options) ->
   Backbone.history.start(root: 'index.html', silent: true)

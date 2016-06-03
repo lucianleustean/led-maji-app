@@ -5,6 +5,6 @@ describe 'IndexPage', ->
   beforeEach ->
     @view = new IndexPage()
 
-  it 'shows a message', ->
+  it 'shows instructions', ->
     DOM.append @view.render().el
-    expect(@view.$el.find('p.welcome').text().trim()).to.eq('Welcome to your Maji app!')
+    expect(@view.$el.find('p.instructions').text().trim()).to.eq('Press a button to interact with the BLE device')

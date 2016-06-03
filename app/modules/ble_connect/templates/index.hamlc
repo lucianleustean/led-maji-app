@@ -1,5 +1,9 @@
 .header
   %a{href:'#/', class:'btn left', 'data-rel': 'back'}
-  = 'Detail'
+  = @t('ble_connect.title')
 
 .body
+  #connected
+    %ul.list
+
+  #available
