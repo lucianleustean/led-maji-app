@@ -6,6 +6,13 @@
 * Make sure you have fulfilled the [prerequisites](#prerequisites)
 * Running `bin/setup` will hook you up with everything you need
 
+## Microcontroller setup
+
+* In `app/modules/home/index_page.coffee:9`, change those settings to fit you BLE receiver.
+
+* Wire your Arduino components:
+![Arduino Diagram](arduino/diagrams/ble-led-wiring.jpg/?raw=true "Arduino diagram")
+
 ## Development workflow
 
 * While developing you can run a local serve using `make watch`. This will start a server on http://localhost:9090.
